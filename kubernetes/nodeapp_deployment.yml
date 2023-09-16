@@ -6,14 +6,14 @@ spec:
   replicas: 3  # Number of desired replicas
   selector:
     matchLabels:
-      app: nodejs_app
+      app: nodejs-app
   template:
     metadata:
       labels:
-        app: nodejs_app
+        app: nodejs-app
     spec:
       containers:
-        - name: mynode_containers
+        - name: mynode-containers
           image: amodsingh25/nodejsapp:latest  # Your Docker image and version
           ports:
             - containerPort: 3000  # Port your application listens on
